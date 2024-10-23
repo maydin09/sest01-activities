@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Event Form</h1>
+    <div class="container">
+      <form action="">
+        <div class="form-group">
+          <label for="fullname-id">Name:</label>
+          <input
+            type="text"
+            name="user-fullname"
+            id="fullname-id"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email-id">Email:</label>
+          <input
+            type="email"
+            name="user-email"
+            id="email-id"
+            placeholder="johndoe123@gmail.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="mobile-number-id">Mobile #:</label>
+          <input
+            type="tel"
+            name="user-mobile-number"
+            id="mobile-number-id"
+            placeholder="09xx-xxx-xxxx"
+            pattern="09[\d]{2}-[\d]{3}-[\d]{4}"
+            title="09xx-xxx-xxxx"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="birthdate-id">Birthdate:</label>
+          <input
+            type="date"
+            name="user-birthdate"
+            id="birthdate-id"
+            value="2024-01-01"
+            min="1924-01-01"
+            max="2006-01-01"
+          />
+        </div>
+        <div class="form-group">
+          <label for="age-id">Age:</label>
+          <input
+            type="number"
+            name="user-age"
+            id="age-id"
+            placeholder="18"
+            required
+            min="18"
+            max="100"
+          />
+        </div>
+        <div class="form-group">
+          <label for="event-id">Where did you hear about this event?</label>
+          <select name="event" id="event-id">
+            <option value="none" disabled selected hidden>
+              -- Select here --
+            </option>
+            <option value="FB">Facebook</option>
+            <option value="IG">Instagram</option>
+            <option value="LI">LinkedIn</option>
+            <option value="JS">Jobstreet</option>
+            <option value="O">Others</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Would you like to be updated about the upcoming events?</label>
+          <div class="radio-group">
+            <div>
+              <input type="radio" name="y-n" id="y-e" value="y" />
+              <label for="y-e">Yes</label>
+            </div>
+            <div>
+              <input type="radio" name="y-n" id="n-e" value="n" />
+              <label for="n-e">No</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Industry you are working in:</label>
+          <div class="checkbox-group">
+            <div>
+              <input type="checkbox" name="industry" id="it-id" value="it" />
+              <label for="it-id">IT</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="industry"
+                id="sales-id"
+                value="sales"
+              />
+              <label for="sales-id">Sales</label>
+            </div>
+            <div>
+              <input type="checkbox" name="industry" id="hc-id" value="hc" />
+              <label for="hc-id">Healthcare</label>
+            </div>
+            <div>
+              <input type="checkbox" name="industry" id="mf-id" value="mf" />
+              <label for="mf-id">Manufacturing</label>
+            </div>
+            <div>
+              <input type="checkbox" name="industry" id="ent-id" value="en" />
+              <label for="ent-id">Entertainment</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="comment-id">Comments:</label>
+          <textarea
+            name="user-comment"
+            id="comment-id"
+            placeholder="What's on your mind?"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+        <button type="reset" class="btn">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
