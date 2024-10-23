@@ -4,32 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Form</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        margin: auto;
-        padding: 10px;
-        max-width: 600px;
-      }
-      div {
-        background-color: antiquewhite;
-        margin: 10px;
-        padding: 2px;
-      }
-
-      h1 {
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="forms.css" />
   </head>
   <body>
     <div class="container">
       <h1>Event Form</h1>
-      <br />
       <form action="">
         <div class="form-group">
           <label for="fullname-id">Name:</label>
@@ -147,7 +126,7 @@
         </div>
 
         <div class="form-group">
-          <label for="comment-id">Comments:</label><br />
+          <label for="comment-id">Comments:</label>
           <textarea
             name="user-comment"
             id="comment-id"
@@ -156,8 +135,10 @@
           ></textarea>
         </div>
 
-        <button type="submit" class="btn">Submit</button>
-        <button type="reset" class="btn">Reset</button>
+        <div class="btn">
+          <button type="submit" class="btn b1">Submit</button>
+          <button type="reset" class="btn b2">Reset</button>
+        </div>
       </form>
     </div>
   </body>
